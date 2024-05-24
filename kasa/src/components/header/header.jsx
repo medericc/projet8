@@ -10,9 +10,26 @@ const Header = () => {
                 </Link>
 
                 <div className="flex">
-                <NavLink to="/" className="text-black px-4 inline-block border-b border-transparent hover:border-black transition duration-300">Accueil</NavLink>
-<NavLink to="/about" className="text-black px-4 inline-block border-b border-transparent hover:border-black transition duration-300">A Propos</NavLink>
-
+                    <NavLink 
+                        to="/" 
+                        className={({ isActive }) => 
+                            isActive 
+                                ? "text-black px-4 inline-block border-b-2 border-black" 
+                                : "text-black px-4 inline-block border-b-2 border-transparent hover:border-black transition duration-300"
+                        }
+                    >
+                        Accueil
+                    </NavLink>
+                    <NavLink 
+                        to="/about" 
+                        className={({ isActive }) => 
+                            isActive 
+                                ? "text-black px-4 inline-block border-b-2 border-black" 
+                                : "text-black px-4 inline-block border-b-2 border-transparent hover:border-black transition duration-300"
+                        }
+                    >
+                        A Propos
+                    </NavLink>
                 </div>
             </nav>
         </header>
