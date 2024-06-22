@@ -21,8 +21,8 @@ function Information({
     <>
       <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded">
         <div>
-          <h1 className="text-2xl font-semibold">{titleHouse}</h1>
-          <p className="text-gray-600">{location}</p>
+          <h1 className="text-[#FF6060] font-montserrat text-[36px] font-medium leading-[51.34px] text-left">{titleHouse}</h1>
+          <p className="text-black font-montserrat text-[18px] font-medium leading-[25.67px] text-left">{location}</p>
         </div>
         <div className="flex">
           <ul className="flex">

@@ -10,6 +10,8 @@ const Details = ({ data }) => {
     const lodging = data && data.find(lodging => lodging.id === lodgingId); // return an object or undefined
     if (!lodging) return <NotFound />
 
+    const [firstName, lastName] = lodging.host.name.split(' ');
+
     return (
         <main className="container mx-auto px-4">
             <div className="flex flex-col items-center gap-8">
@@ -25,7 +27,10 @@ const Details = ({ data }) => {
                         </div>
                         <div className='details-owner flex flex-col items-center mb-10'>
                             <div className='flex items-center mr-4'>
-                                <p className="text-sm font-medium text-[#FF6060]">{lodging.host.name}</p>
+                                <div className="text-[#FF6060] font-montserrat text-[18px] font-medium leading-[25.67px] text-right">
+                                    <p>{firstName}</p>
+                                    <p>{lastName}</p>
+                                </div>
                                 <img className='w-10 h-10 rounded-full ml-2' src={lodging.host.picture} alt={lodging.host.name} />
                             </div>
                             <div className='text-sm mt-5'>

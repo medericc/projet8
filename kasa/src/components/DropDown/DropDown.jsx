@@ -7,7 +7,7 @@ const DropDown = ({ title, content }) => {
             <details className="dropdown">
                 <summary className="dropdown-summary">
                     {title}
-                    <img src="../../asset/arrow.png" alt="arrow" className="arrow-icon" />
+                    <img src="./arrow.png" alt="arrow" className="arrow-icon" />
               
                 </summary>
                 <div className="dropdown-content">
