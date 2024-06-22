@@ -5,8 +5,37 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '1240': '1240px',
+        '136': '136px',
+        '122': '122px',
+        
+      },
+      height: {
+        '415': '415px',
+        '34': '34px',
+        '68': '68px',
+        '39.44': '39.44px'
+      },
+      
+      fontSize: {
+        '288px': '288px',
+        '36px': '36px',
+        '18px': '18px',
+      },
+      lineHeight: {
+        '410.69px': '410.69px',
+        '51.34px': '51.34px',
+        '25.67px': '25.67px',
+      },
+      fontWeight: {
+        '500': '500',
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
-

@@ -12,31 +12,33 @@ const Details = ({ data }) => {
 
     return (
         <main className="container mx-auto px-4">
-            <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <Carrousel2 images={lodging.pictures} />
-                <article className="details">
-                    <div className="details-lodging">
-                        <h1 className='text-2xl font-semibold'>{lodging.title}</h1>
-                        <p className='text-gray-600 mb-2'>{lodging.location}</p>
-                        <div className='flex flex-wrap gap-2'>
-                            {lodging.tags.map(tag => <span key={tag} className="text-sm bg-gray-200 py-1 px-2 rounded">{tag}</span>)}
+            <div className="flex flex-col items-center gap-8">
+                <Carrousel2 images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
+                <article className="w-1240 lg:order-2">
+                    <div className="flex flex-row justify-between">
+                        <div className="details-lodging">
+                            <h1 className='text-2xl text-[#FF6060]'>{lodging.title}</h1>
+                            <p className='text-xl font-semibold'>{lodging.location}</p>
+                            <div className='flex flex-wrap gap-2 mt-2'>
+                                {lodging.tags.map(tag => <span key={tag} className="cursor-pointer py-1 px-5 bg-red-500 rounded-md text-xs text-white font-medium">{tag}</span>)}
+                            </div>
+                        </div>
+                        <div className='details-owner flex flex-col items-center mb-10'>
+                            <div className='flex items-center mr-4'>
+                                <p className="text-sm font-medium text-[#FF6060]">{lodging.host.name}</p>
+                                <img className='w-10 h-10 rounded-full ml-2' src={lodging.host.picture} alt={lodging.host.name} />
+                            </div>
+                            <div className='text-sm mt-5'>
+                                <Rating rating={parseInt(lodging.rating)} />
+                            </div>
                         </div>
                     </div>
-                    <div className='details-owner flex items-center mt-4'>
-                        <div className='flex items-center mr-4'>
-                            <p className="text-sm font-medium">{lodging.host.name}</p>
-                            <img className='w-10 h-10 rounded-full ml-2' src={lodging.host.picture} alt={lodging.host.name} />
-                        </div>
-                        <div className='text-sm'>
-                            <Rating rating={parseInt(lodging.rating)} />
-                        </div>
-                    </div>
-                    <div className='dropdown mt-6'>
+                    <div className='flex dropdown mt-2 mb-20'>
                         <DropDown title="Description" content={lodging.description} />
                         <DropDown title="Equipements" content={lodging.equipments} />
                     </div>
                 </article>
-            </section>
+            </div>
         </main>
     );
 }

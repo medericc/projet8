@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <header className="bg-white py-4">
-            <nav className="container mx-auto flex items-center justify-between">
+            <nav className="w-1240 h-68 mx-auto flex items-center justify-between mb-10">
                 <Link to="/" className="flex items-center">
-                    <img className="h-8" src={logo} alt="logo" />
+                    <img className="h-68" src={logo} alt="logo" />
                 </Link>
 
                 <div className="flex">
@@ -14,8 +14,8 @@ const Header = () => {
                         to="/" 
                         className={({ isActive }) => 
                             isActive 
-                                ? "text-black px-4 inline-block border-b-2 border-black" 
-                                : "text-black px-4 inline-block border-b-2 border-transparent hover:border-black transition duration-300"
+                                ? "w-136 h-34 flex items-center justify-center text-black border-b-2 border-black" 
+                                : "w-136 h-34 flex items-center justify-center text-black border-b-2 border-transparent hover:border-black transition duration-300"
                         }
                     >
                         Accueil
@@ -24,8 +24,8 @@ const Header = () => {
                         to="/about" 
                         className={({ isActive }) => 
                             isActive 
-                                ? "text-black px-4 inline-block border-b-2 border-black" 
-                                : "text-black px-4 inline-block border-b-2 border-transparent hover:border-black transition duration-300"
+                                ? "w-136 h-34 flex items-center justify-center text-black border-b-2 border-black" 
+                                : "w-136 h-34 flex items-center justify-center text-black border-b-2 border-transparent hover:border-black transition duration-300"
                         }
                     >
                         A Propos

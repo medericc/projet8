@@ -1,23 +1,18 @@
-
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import Card from "../carte/carteacc.jsx";
 import Banner from "../banniere/Banniere.jsx";
 
 const Home = ({ data }) => {
-    
     console.log(data);
     return (
-        
-        <main className="container mx-auto px-4">
-            <Banner page='home'/>
-            
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gray-200">
+        <main className="container mx-auto px-4 flex flex-col items-center">
+            <Banner page='home' />
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-gray-200 mt-4 mb-4 rounded-lg p-4" style={{ maxWidth: '1240px' }}>
                 {data && data.map((lodging) => (
-                   
-                    <article key={lodging.id} >
+                    <article key={lodging.id}>
                         <Link to={`/details/${lodging.id}`} className="no-underline bg-red-200">
-                            <Card title={lodging.title} description={lodging.description} image={lodging.cover}/>
+                            <Card title={lodging.title} description={lodging.description} image={lodging.cover} />
                         </Link>
                     </article>
                 ))}
