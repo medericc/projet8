@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 const Details = ({ data }) => {
     const { lodgingId } = useParams();
-    const lodging = data && data.find(lodging => lodging.id === lodgingId); // return an object or undefined
+    const lodging = data && data.find(lodging => lodging.id === lodgingId); 
     if (!lodging) return <NotFound />
 
     const [firstName, lastName] = lodging.host.name.split(' ');

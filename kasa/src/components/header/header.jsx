@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <header className="bg-white py-4">
-            <nav className="w-1240 h-68 mx-auto flex items-center justify-between mb-10">
+            <nav className="w-1240 h-68 mx-auto flex items-center justify-between mb-10 mt-10">
                 <Link to="/" className="flex items-center">
                     <img className="h-68" src={logo} alt="logo" />
                 </Link>
