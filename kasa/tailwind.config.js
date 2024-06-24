@@ -38,6 +38,12 @@ export default {
         'montserrat': ['Montserrat', 'sans-serif'],
       },
     },
+    screens: {
+      'sm': '640px',  // Small screens (phones)
+      'md': '768px',  // Medium screens (tablets)
+      'lg': '1024px', // Large screens (desktops)
+      // Add more breakpoints as needed
+    },
   },
   plugins: [],
 }

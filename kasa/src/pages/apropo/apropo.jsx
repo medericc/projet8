@@ -1,6 +1,6 @@
-import DropDown from "../DropDown/DropDown.jsx";
-import Banner from "../banniere/Banniere.jsx";
-import Spacing from "../spacing/spacing.jsx";
+import DropDown from "../../components/DropDown/DropDown.jsx";
+import Banner from "../../components/banniere/Banniere.jsx";
+import Spacing from "../../components/spacing/spacing.jsx";
 
 const Apropo = () => {
     const dropdownData = [

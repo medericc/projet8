@@ -1,11 +1,10 @@
-
 import PropTypes from 'prop-types';
 import bannerHome from '../../asset/banner1.png';
 import bannerAbout from '../../asset/banner2.png';
 
 const Banniere = ({ page }) => {
   return (
-    <div className={`relative rounded-lg overflow-hidden ${page === "about" ? "opacity-60" : "opacity-30 bg-blend-darken"}`} style={{ width: '1240px', height: '223px' }}>
+    <div className={`relative rounded-lg overflow-hidden ${page === "about" ? "opacity-60" : "opacity-30 bg-blend-darken"}`} style={{ maxWidth: '1240px', width: '100%', height: '223px' }}>
       <img
         className="object-cover w-full h-full"
         src={page === "home" ? bannerHome : bannerAbout} 

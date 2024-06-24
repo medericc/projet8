@@ -7,13 +7,16 @@ const DropDown = ({ title, content }) => {
             <details className="dropdown">
                 <summary className="dropdown-summary">
                     {title}
-                    <img src="./arrow.png" alt="arrow" className="arrow-icon" />
-              
+                    <img src="/arrow.png" alt="arrow" className="arrow-icon" />
                 </summary>
                 <div className="dropdown-content">
                     <p className="dropdown-text">
                         {Array.isArray(content)
-                            ? content.map((item, index) => <span key={index} className="block mb-2">{item}</span>)
+                            ? content.map((item, index) => (
+                                  <span key={index} className="block mb-2">
+                                      {item}
+                                  </span>
+                              ))
                             : <span>{content}</span>}
                     </p>
                 </div>
@@ -26,7 +29,7 @@ DropDown.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.oneOfType([
         PropTypes.string,
-        PropTypes.arrayOf(PropTypes.string)
+        PropTypes.arrayOf(PropTypes.string),
     ]).isRequired,
 };
 
