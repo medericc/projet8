@@ -2,9 +2,9 @@
 import PropTypes from 'prop-types';
 import Header from "../header/header.jsx";
 import Footer from "../footer/footer.jsx";
-import Home from "../accueil/accueil.jsx";
+import Home from "../../pages/accueil/accueil.jsx";
 import About from "../apropo/apropo.jsx";
-import NotFound from "../non/non.jsx";
+import NotFound from "../../pages/non/non.jsx";
 import Details from "../details/details.jsx";
 import {
     createBrowserRouter,

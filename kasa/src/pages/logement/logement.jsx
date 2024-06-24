@@ -1,8 +1,8 @@
 import { redirect, useLoaderData } from 'react-router-dom';
 import data from '../../app.json';
 import Main from '../../main.jsx';
-import Carousel from '../carroussel/carroussel.jsx';
-import Information from '../informations/informations.jsx';
+import Carousel from '../../components/carroussel/carroussel.jsx';
+import Information from '../../components/informations/informations.jsx';
 
 
 export async function loader({ params }) {

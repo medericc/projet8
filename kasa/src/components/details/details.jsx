@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Carrousel2 from "../carrousel2/carroussel2.jsx";
 import DropDown from "../DropDown/DropDown.jsx";
-import NotFound from "../non/non.jsx";
+import NotFound from "../../pages/non/non.jsx";
 import Rating from "../etoile/rating.jsx";
 import PropTypes from "prop-types";
 

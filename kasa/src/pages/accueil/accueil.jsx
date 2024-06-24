@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import Card from "../carte/carteacc.jsx";
-import Banner from "../banniere/Banniere.jsx";
+import Card from "../../components/carte/carteacc.jsx";
+import Banner from "../../components/banniere/Banniere.jsx";
 
 const Home = ({ data }) => {
     console.log(data);
