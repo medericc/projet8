@@ -1,7 +1,7 @@
 import Card from '../../Card';
 import PropTypes from "prop-types";
 
-// Affiche une galerie de cartes à partir des données fournies.
+
 const Gallery = ({ data }) => {
   return (
     <div className="flex flex-wrap -mx-4">

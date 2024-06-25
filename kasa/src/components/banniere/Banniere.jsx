@@ -18,14 +18,13 @@ const Banniere = ({ page }) => {
         </div>
       ) : (
         <div className="absolute inset-0 bg-gray-500 bg-opacity-60 flex justify-center items-center">
-          {/* Add any specific content for the About banner here if needed */}
+        
         </div>
       )}
     </div>
   );
 }
 
-// Validation des props
 Banniere.propTypes = {
   page: PropTypes.oneOf(['home', 'about']).isRequired,
 };

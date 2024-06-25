@@ -11,7 +11,7 @@ export default function LeftArrow({ onClick }) {
     />
   );
 }
- // Validation des props
+
  LeftArrow.propTypes = {
     onClick: PropTypes.func.isRequired,
   };

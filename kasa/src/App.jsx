@@ -13,7 +13,7 @@ const App = () => {
         return <div>Erreur lors du chargement des données</div>;
     }
 
-    return <Router fetchData={fetchData} />; // Passez fetchData complet
+    return <Router fetchData={fetchData} />; 
 };
 
 export default App;

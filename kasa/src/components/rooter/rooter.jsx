@@ -14,7 +14,7 @@ import {
 import Loader from "../loader/loader.jsx";
 
 const Router = ({ fetchData }) => {
-    const { isLoading, data } = fetchData; // Destructure fetchData
+    const { isLoading, data } = fetchData; 
 
     const AppLayout = () => (
         <>
@@ -30,7 +30,7 @@ const Router = ({ fetchData }) => {
             children: [
                 {
                     path: "/",
-                    element: <Home data={data} />, // Passez data directement
+                    element: <Home data={data} />, 
                 },
                 {
                     path: "/about",
@@ -38,7 +38,7 @@ const Router = ({ fetchData }) => {
                 },
                 {
                     path: "/details/:lodgingId",
-                    element: <Details data={data} />, // Passez data directement
+                    element: <Details data={data} />, 
                 },
                 {
                     path: "*",

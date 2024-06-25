@@ -12,7 +12,7 @@ export default function RightArrow({ onClick }) {
     );
   }
   
-  // Validation des props
+
   RightArrow.propTypes = {
     onClick: PropTypes.func.isRequired,
   };

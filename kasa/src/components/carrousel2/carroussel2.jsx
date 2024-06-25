@@ -50,7 +50,7 @@ const Carrousel2 = ({ images }) => {
   );
 };
 
-// Validation des props
+
 Carrousel2.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

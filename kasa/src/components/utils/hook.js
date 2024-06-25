@@ -15,12 +15,12 @@ export function useFetch(url) {
                     throw new Error(`Erreur HTTP ! statut : ${response.status}`);
                 }
                 const contentType = response.headers.get("content-type");
-                console.log('Content-Type:', contentType); // Déclaration de débogage
+                console.log('Content-Type:', contentType); 
                 if (!contentType || !contentType.includes("application/json")) {
                     throw new TypeError("Le contenu reçu n'est pas au format JSON");
                 }
                 const data = await response.json();
-                console.log('Données reçues:', data); // Déclaration de débogage
+                console.log('Données reçues:', data); 
                 setData(data);
             } catch (err) {
                 console.error('Erreur:', err);
