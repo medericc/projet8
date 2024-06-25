@@ -4,7 +4,7 @@ import './header.css';
 
 const Header = () => {
     return (
-        <header className="bg-white py-4">
+        <header className="bg-white py-4 px-4 sm:px-6 lg:px-8">
             <nav className="mx-auto flex items-center justify-between mb-10 mt-10 header-nav">
                 <Link to="/" className="flex items-center">
                     <img className="header-logo" src={logo} alt="logo" />
