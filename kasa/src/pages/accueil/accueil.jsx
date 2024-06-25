@@ -6,9 +6,9 @@ import Banner from "../../components/banniere/Banniere.jsx";
 const Home = ({ data }) => {
     console.log(data);
     return (
-        <main className="container mx-auto px-4 flex flex-col items-center">
+        <main className="container mx-auto  flex flex-col items-center" style={{ maxWidth: '1240px'}}>
             <Banner page='home' />
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4 mb-4 rounded-lg p-4" style={{ maxWidth: '1240px', backgroundColor: '#f6f6f6' }}>
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mt-4 mb-4 rounded-lg p-4 w-full" style={{ maxWidth: '1240px', backgroundColor: '#f6f6f6' }}>
                 {data && data.map((lodging) => (
                     <article key={lodging.id}>
                         <Link to={`/details/${lodging.id}`} className="no-underline">
