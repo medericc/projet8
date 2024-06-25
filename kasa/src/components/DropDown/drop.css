@@ -9,6 +9,8 @@
 
 
 .dropdown-summary {
+    width: 100%;
+    max-width: 1023px;
     cursor: pointer;
     padding: 0.5rem 1rem;
     background-color: #f56565;

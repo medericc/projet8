@@ -29,8 +29,8 @@ const Apropo = () => {
     return (
         <main className="flex flex-col items-center container mx-auto px-4">
             <Banner page="about" />
-            <section>
-                <article className="space-y-4">
+            <section className="w-full" style={{ maxWidth: '1240px'}}>
+                <article className="space-y-4 w-full" >
                     {dropdownData.map((dropdown, index) => (
                         <DropDown key={index} title={dropdown.title} content={dropdown.content} />
                     ))}
