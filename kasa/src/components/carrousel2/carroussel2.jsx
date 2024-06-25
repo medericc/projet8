@@ -25,8 +25,8 @@ const Carrousel2 = ({ images }) => {
   const arrowShouldDisplay = isThereOnlyOneImage();
 
   return (
-    <div className="relative w-1240 h-415">
-      <img className="w-1240 h-415 object-cover" src={images[index]} alt="carrousel" />
+    <div className="relative w-full h-415 " style={{ maxWidth: '1240px'}}>
+      <img className="w-full h-415 object-cover" style={{ maxWidth: '1240px'}} src={images[index]} alt="carrousel" />
       {!arrowShouldDisplay && (
         <>
           <img

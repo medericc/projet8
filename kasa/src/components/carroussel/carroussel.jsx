@@ -15,7 +15,7 @@ export default function Carrousel({ pictures }) {
   };
 
   return (
-    <div className="relative flex items-center justify-center w-full h-64 md:h-96 bg-gray-200">
+    <div className="relative flex items-center justify-center w-full h-64 md:h-96 bg-gray-200" style={{ maxWidth: '1240px'}}>
       <div className="absolute top-2 left-2 bg-black text-white text-xs px-2 py-1 rounded-md">
         {currentImage + 1}/{pictures.length}
       </div>

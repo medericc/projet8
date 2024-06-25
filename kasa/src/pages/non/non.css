@@ -1,0 +1,29 @@
+.not-found-404 {
+    font-size: 288px;
+    line-height: 1;
+}
+
+.not-found-message {
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.not-found-link {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+    .not-found-404 {
+        font-size: 96px; 
+    }
+
+    .not-found-message {
+        font-size: 18px;  
+    }
+
+    .not-found-link {
+        font-size: 14px;  
+    }
+}

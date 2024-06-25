@@ -1,0 +1,16 @@
+.header-nav {
+    max-width: 1240px;
+    width: 100%;
+    height: 68px;
+}
+
+.header-logo {
+    height: 68px;
+}
+
+
+@media (max-width: 768px) {
+    .header-logo {
+        height: 31px;  
+    }
+}

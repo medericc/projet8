@@ -19,7 +19,7 @@ function Information({
 
   return (
     <>
-      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded">
+      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded w-full" style={{ maxWidth: '1240px'}}>
         <div>
           <h1 className="text-[#FF6060] font-montserrat text-[36px] font-medium leading-[51.34px] text-left">{titleHouse}</h1>
           <p className="text-black font-montserrat text-[18px] font-medium leading-[25.67px] text-left">{location}</p>
@@ -71,14 +71,14 @@ function Information({
 }
 
 Information.propTypes = {
-  titleHouse: PropTypes.string.isRequired, // Validation que 'titleHouse' est une chaîne de caractères et est requis
-  location: PropTypes.string.isRequired, // Validation que 'location' est une chaîne de caractères et est requis
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired, // Validation que 'tags' est un tableau de chaînes de caractères et est requis
-  nameHost: PropTypes.string.isRequired, // Validation que 'nameHost' est une chaîne de caractères et est requis
-  pictureHost: PropTypes.string, // Validation que 'pictureHost' est une chaîne de caractères
-  ratings: PropTypes.number.isRequired, // Validation que 'ratings' est un nombre et est requis
-  description: PropTypes.string, // Validation que 'description' est une chaîne de caractères
-  equipments: PropTypes.arrayOf(PropTypes.string).isRequired, // Validation que 'equipments' est un tableau de chaînes de caractères et est requis
+  titleHouse: PropTypes.string.isRequired, 
+  location: PropTypes.string.isRequired, 
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired, 
+  nameHost: PropTypes.string.isRequired, 
+  pictureHost: PropTypes.string, 
+  ratings: PropTypes.number.isRequired, 
+  description: PropTypes.string, 
+  equipments: PropTypes.arrayOf(PropTypes.string).isRequired, 
 };
 
 export default Information;

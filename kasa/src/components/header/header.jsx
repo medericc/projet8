@@ -1,12 +1,13 @@
 import logo from '../../asset/logo.svg';
 import { Link, NavLink } from "react-router-dom";
+import './header.css'; 
 
 const Header = () => {
     return (
         <header className="bg-white py-4">
-            <nav className="mx-auto flex items-center justify-between mb-10 mt-10" style={{ maxWidth: '1240px', width: '100%', height: '68px' }}>
+            <nav className="mx-auto flex items-center justify-between mb-10 mt-10 header-nav">
                 <Link to="/" className="flex items-center">
-                    <img className="h-68" src={logo} alt="logo" />
+                    <img className="header-logo" src={logo} alt="logo" />
                 </Link>
 
                 <div className="flex space-x-8">

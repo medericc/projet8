@@ -16,16 +16,16 @@ const Details = ({ data }) => {
         <main className="container mx-auto px-4">
             <div className="flex flex-col items-center gap-8">
                 <Carrousel2 images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
-                <article className="w-1240 lg:order-2">
-                    <div className="flex flex-row justify-between">
-                        <div className="details-lodging">
+                <article className="w-full lg:order-2" style={{ maxWidth: '1240px'}}>
+                    <div className="flex flex-col lg:flex-row justify-between">
+                        <div className="details-lodging order-1 lg:order-none">
                             <h1 className='text-2xl text-[#FF6060]'>{lodging.title}</h1>
                             <p className='text-xl font-semibold'>{lodging.location}</p>
                             <div className='flex flex-wrap gap-2 mt-2'>
                                 {lodging.tags.map(tag => <span key={tag} className="cursor-pointer py-1 px-5 bg-red-500 rounded-md text-xs text-white font-medium">{tag}</span>)}
                             </div>
                         </div>
-                        <div className='details-owner flex flex-col items-center mb-10'>
+                        <div className='details-owner flex flex-col items-center mb-10 order-2 lg:order-none'>
                             <div className='flex items-center mr-4'>
                                 <div className="text-[#FF6060] font-montserrat text-[18px] font-medium leading-[25.67px] text-right">
                                     <p>{firstName}</p>
@@ -38,7 +38,7 @@ const Details = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex dropdown mt-2 mb-20'>
+                    <div className='flex flex-col lg:flex-row dropdown mt-2 mb-20'>
                         <DropDown title="Description" content={lodging.description} />
                         <DropDown title="Equipements" content={lodging.equipments} />
                     </div>
