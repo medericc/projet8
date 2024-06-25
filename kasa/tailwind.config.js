@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '0px 4px 4px 0px #00000040',
+    },
       width: {
         '1240': '1240px',
         '136': '136px',
@@ -39,10 +42,10 @@ export default {
       },
     },
     screens: {
-      'sm': '640px',  // Small screens (phones)
-      'md': '768px',  // Medium screens (tablets)
-      'lg': '1024px', // Large screens (desktops)
-      // Add more breakpoints as needed
+      'sm': '640px',  
+      'md': '768px',  
+      'lg': '1024px', 
+     
     },
   },
   plugins: [],
