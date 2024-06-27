@@ -27,10 +27,10 @@ const Apropo = () => {
     ];
 
     return (
-        <main className="flex flex-col items-center container mx-auto px-4">
+        <main className="flex flex-col items-center container mx-auto px-4 sm:px-0" style={{ maxWidth: '1240px'}}>
             <Banner page="about" />
             <section className="w-full" style={{ maxWidth: '1240px'}}>
-                <article className="space-y-4 w-full" >
+                <article className="space-y-4 w-full">
                     {dropdownData.map((dropdown, index) => (
                         <DropDown key={index} title={dropdown.title} content={dropdown.content} />
                     ))}

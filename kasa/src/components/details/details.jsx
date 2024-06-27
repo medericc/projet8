@@ -25,7 +25,7 @@ const Details = ({ data }) => {
                                 {lodging.tags.map(tag => <span key={tag} className="cursor-pointer py-1 px-5 bg-red-500 rounded-md text-xs text-white font-medium">{tag}</span>)}
                             </div>
                         </div>
-                        <div className='details-owner flex flex-col items-center mb-10 order-2 lg:order-none'>
+                        <div className='details-owner flex flex-col items-center mb-10 order-2 lg:order-none '>
                             <div className='flex items-center mr-4'>
                                 <div className="text-[#FF6060] font-montserrat text-[18px] font-medium leading-[25.67px] text-right">
                                     <p>{firstName}</p>

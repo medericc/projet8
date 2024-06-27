@@ -38,7 +38,7 @@ details[open] .arrow-icon {
     background-color: #f7fafc;
     border-top: 1px solid #e2e8f0;
     overflow: hidden;
-    max-height: none; /* Ensure the content is displayed */
+    max-height: none;
     transition: max-height 0.3s ease;
 }
 
