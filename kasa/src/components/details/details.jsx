@@ -13,8 +13,8 @@ const Details = ({ data }) => {
     const [firstName, lastName] = lodging.host.name.split(' ');
 
     return (
-        <main className="container mx-auto px-4">
-            <div className="flex flex-col items-center gap-8 w-full" style={{ maxWidth: '1240px'}}>
+        <main className=" mx-auto px-4">
+            <div className="flex flex-col items-center gap-8 w-full" >
                 <Carrousel2 images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
                 <article className="w-full lg:order-2" style={{ maxWidth: '1240px'}}>
                     <div className="flex flex-col lg:flex-row justify-between">
