@@ -14,6 +14,7 @@ export default {
         '136': '136px',
         '122': '122px',
         '115px':'115px',
+        '255px':'255px',
         
       },
       height: {

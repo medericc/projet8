@@ -19,7 +19,7 @@ function Information({
 
   return (
     <>
-      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded w-full" style={{ maxWidth: '1240px' }}>
+      <div className="flex justify-between items-center bg-gray-100  rounded w-full" style={{ maxWidth: '1240px' }}>
         <div>
           <h1 className="text-[#FF6060] font-montserrat text-[36px] font-medium leading-[51.34px] text-left">{titleHouse}</h1>
           <p className="text-black font-montserrat text-[18px] font-medium leading-[25.67px] text-left">{location}</p>
