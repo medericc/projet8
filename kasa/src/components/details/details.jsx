@@ -14,7 +14,7 @@ const Details = ({ data }) => {
 
     return (
         <main className="container mx-auto px-4">
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-8 w-full" style={{ maxWidth: '1240px'}}>
                 <Carrousel2 images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
                 <article className="w-full lg:order-2" style={{ maxWidth: '1240px'}}>
                     <div className="flex flex-col lg:flex-row justify-between">
@@ -25,7 +25,7 @@ const Details = ({ data }) => {
                                 {lodging.tags.map(tag => <span key={tag} className="cursor-pointer py-1 px-5 bg-red-500 rounded-md text-xs text-white font-medium">{tag}</span>)}
                             </div>
                         </div>
-                        <div className='details-owner flex flex-col items-center mb-10 order-2 lg:order-none '>
+                        <div className='details-owner flex flex-col items-center mb-10 order-2 lg:order-none ' >
                             <div className='flex items-center mr-4'>
                                 <div className="text-[#FF6060] font-montserrat text-[18px] font-medium leading-[25.67px] text-right">
                                     <p>{firstName}</p>

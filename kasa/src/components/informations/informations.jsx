@@ -19,7 +19,7 @@ function Information({
 
   return (
     <>
-      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded w-full" style={{ maxWidth: '1240px'}}>
+      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded w-full" style={{ maxWidth: '1240px' }}>
         <div>
           <h1 className="text-[#FF6060] font-montserrat text-[36px] font-medium leading-[51.34px] text-left">{titleHouse}</h1>
           <p className="text-black font-montserrat text-[18px] font-medium leading-[25.67px] text-left">{location}</p>
@@ -34,9 +34,9 @@ function Information({
           </ul>
         </div>
       </div>
-      <div className="flex justify-between items-center bg-gray-100 p-4 mb-4 rounded">
-        <div className="flex items-center">
-          <div className="mr-4">
+      <div className="flex flex-col md:flex-row-reverse  justify-around items-center bg-gray-100 p-4 mb-4 rounded w-full" style={{ maxWidth: '1240px' }}>
+        <div className="flex items-center ">
+          <div className="ml-4 lg:mr-4">
             <p className="text-lg font-semibold">{firstName}</p>
             <p className="text-gray-600">{lastName}</p>
           </div>
@@ -46,9 +46,11 @@ function Information({
             className="w-16 h-16 rounded-full"
           />
         </div>
-        <RatingStars ratings={Number(ratings)} />
+        <div className="mt-4 lg:mt-0">
+          <RatingStars ratings={Number(ratings)} />
+        </div>
       </div>
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4" style={{ maxWidth: '1240px' }}>
         <div className="border border-gray-200 rounded">
           <Collapse
             title="Description"
@@ -71,14 +73,14 @@ function Information({
 }
 
 Information.propTypes = {
-  titleHouse: PropTypes.string.isRequired, 
-  location: PropTypes.string.isRequired, 
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired, 
-  nameHost: PropTypes.string.isRequired, 
-  pictureHost: PropTypes.string, 
-  ratings: PropTypes.number.isRequired, 
-  description: PropTypes.string, 
-  equipments: PropTypes.arrayOf(PropTypes.string).isRequired, 
+  titleHouse: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  nameHost: PropTypes.string.isRequired,
+  pictureHost: PropTypes.string,
+  ratings: PropTypes.number.isRequired,
+  description: PropTypes.string,
+  equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Information;

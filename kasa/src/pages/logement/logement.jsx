@@ -18,7 +18,7 @@ export async function loader({ params }) {
 export default function Housing() {
   const { house } = useLoaderData(); 
   return (
-    <Main>
+    <Main className="w-full" style={{ maxWidth: '1240px'}}>
       <Carousel pictures={house.pictures} />
       <Information
         titleHouse={house.title}
