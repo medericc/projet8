@@ -26,19 +26,19 @@ const Details = ({ data }) => {
                             </div>
                         </div>
                         <div className='details-owner flex flex-row-reverse  md:flex-col dm:justify-between items-center md:mb-10 order-2 lg:order-none ' >
-                            <div className='flex items-center mr-4'>
-                                <div className="text-[#FF6060] font-montserrat text-[18px] font-medium leading-[25.67px] text-right">
+                            <div className='flex items-center mr-4 dm:mt-5'>
+                                <div className="text-[#FF6060] font-montserrat text-[18px]  dm:text-[12px] font-medium leading-[25.67px] text-right">
                                     <p>{firstName}</p>
                                     <p>{lastName}</p>
                                 </div>
-                                <img className='w-10 h-10 rounded-full ml-2' src={lodging.host.picture} alt={lodging.host.name} />
+                                <img className='w-10 h-10  rounded-full ml-2' src={lodging.host.picture} alt={lodging.host.name} />
                             </div>
                             <div className='text-sm mt-5'>
                                 <Rating rating={parseInt(lodging.rating)} />
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col lg:flex-row dropdown mt-2 mb-8 md:mb-20'>
+                    <div className='flex flex-col lg:flex-row dropdown mt-1 mb-8 md:mb-20'>
                         <DropDown title="Description" content={lodging.description} />
                         <DropDown title="Equipements" content={lodging.equipments} />
                     </div>
