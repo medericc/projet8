@@ -2,7 +2,7 @@ import DropDown from "../../components/DropDown/DropDown.jsx";
 import Banner from "../../components/banniere/Banniere.jsx";
 import Spacing from "../../components/spacing/spacing.jsx";
 
-const Apropo = () => {
+const Apropos = () => {
     const dropdownData = [
         {
             title: "Fiabilité",
@@ -41,4 +41,4 @@ const Apropo = () => {
     );
 };
 
-export default Apropo;
+export default Apropos;

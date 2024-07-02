@@ -1,27 +1,18 @@
-import { Link } from 'react-router-dom';
-import PropTypes from "prop-types";
-
-export default function Card({ card }) {
- const slug = card.title.toLowerCase().split(' ').join('-');
-
-  return (
-    <Link to={`/house/${slug}`} className="block w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-      <div className="bg-white rounded-lg overflow-hidden shadow-md">
-        <img
-          src={card.cover}
-          alt={card.title}
-          className="w-full h-40 object-cover"
-        />
-        <div className="p-4">
-          <h2 className="text-lg font-semibold">{card.title}</h2>
+import './card.css'; 
+// eslint-disable-next-line react/prop-types
+const Card = ({ title, image }) => {
+    return (
+        <div className="card" >
+            <div className="w-full h-full flex flex-col justify-between">
+                <img className="w-full h-auto object-cover rounded" src={image} alt={title} style={{ height: '70%' }} />
+                <div className="p-4 h-1/3 flex items-center justify-center">
+                    <h2 className="text-xl font-semibold" style={{ fontFamily: 'Montserrat', width: '100%', fontSize: '17px', fontWeight: 700, lineHeight: '18.67px', textAlign: 'left', display: 'flex', alignItems: 'center',height: '100%', overflow: 'hidden' }}>
+                        <span style={{ width: 'fit-content', maxWidth: '100%', whiteSpace: 'normal', wordWrap: 'break-word' }}>{title}</span>
+                    </h2>
+                </div>
+            </div>
         </div>
-      </div>
-    </Link>
-  );
-}
-Card.propTypes = {
-    card: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      cover: PropTypes.string.isRequired,
-    }).isRequired,
-  };
+    );
+};
+
+export default Card;

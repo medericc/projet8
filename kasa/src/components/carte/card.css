@@ -1,0 +1,51 @@
+
+.card {
+    padding: 16px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 16px auto; 
+    width: 340px; 
+    height: 340px; 
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .card {
+      width: 393px; 
+      height: 255px; 
+      margin: 8px auto; 
+    }
+
+    
+
+    
+  }
+  
+
+  @media (max-width: 375px) {
+    .card {
+      width: 343px; 
+      height: 255px; 
+      margin: 8px auto; 
+    }
+
+    
+
+    
+  }
+
+  
+  @media (max-width: 320px) {
+    .card {
+      width: 288px; 
+      height: 255px; 
+      margin: 8px auto; 
+    }
+
+    
+
+    
+  }
+  

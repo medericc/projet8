@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import arrowRight from "../../asset/arrow-right.svg";
 import arrowLeft from "../../asset/arrow-left.svg";
 
-const Carrousel2 = ({ images }) => {
+const Carrousel = ({ images }) => {
   const [index, setIndex] = useState(0);
 
   if (!images || images.length === 0) {
@@ -51,8 +51,8 @@ const Carrousel2 = ({ images }) => {
 };
 
 
-Carrousel2.propTypes = {
+Carrousel.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Carrousel2;
+export default Carrousel;

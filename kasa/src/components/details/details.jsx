@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Carrousel2 from "../carrousel2/carroussel2.jsx";
+import Carrousel from "../carrousel/carroussel.jsx";
 import DropDown from "../DropDown/DropDown.jsx";
 import NotFound from "../../pages/non/non.jsx";
 import Rating from "../etoile/rating.jsx";
@@ -15,7 +15,7 @@ const Details = ({ data }) => {
     return (
         <main className=" mx-auto px-4">
             <div className="flex flex-col items-center gap-8 dm:gap-2 w-full" >
-                <Carrousel2 images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
+                <Carrousel images={lodging.pictures} className="w-1240 h-415 lg:order-1" />
                 <article className="w-full lg:order-2" style={{ maxWidth: '1240px'}}>
                     <div className="flex flex-col lg:flex-row justify-between">
                         <div className="details-lodging order-1 lg:order-none">

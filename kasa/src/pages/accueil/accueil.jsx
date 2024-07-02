@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import Card from "../../components/carte/carteacc.jsx";
+import Card from "../../components/carte/carte.jsx";
 
 import Banner from "../../components/banniere/Banniere.jsx";
 
@@ -9,8 +9,8 @@ const Home = ({ data }) => {
     return (
         <main className="container mx-auto w-full flex flex-col items-center px-4 sm:px-0" style={{ maxWidth: '1240px' }}>
             <Banner page='home' />
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 mb-10 rounded-lg p-4 w-full bg-white sm:bg-gray-100 " style={{ maxWidth: '1240px' }}>
-                
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 mb-10 rounded-lg p-0 sm:p-4 w-full bg-white sm:bg-gray-100" style={{ maxWidth: '1240px' }}>
+  
                 {data && data.map((lodging) => (
                     <article key={lodging.id} style={{ margin: 'auto' }}  >
                         <Link to={`/details/${lodging.id}`} className="no-underline">
