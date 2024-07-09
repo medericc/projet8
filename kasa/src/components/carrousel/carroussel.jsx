@@ -43,7 +43,7 @@ const Carrousel = ({ images }) => {
           />
         </>
       )}
-      <p className="absolute bottom-2 right-2 text-white text-sm">
+        <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-sm hidden md:block">
         {index + 1}/{images.length}
       </p>
     </div>
